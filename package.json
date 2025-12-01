@@ -1,0 +1,26 @@
+{
+  "name": "lisp-compiler",
+  "version": "1.0.0",
+  "description": "A simple Lisp compiler and JIT for ARM64 macOS",
+  "main": "dist/main.js",
+  "bin": {
+    "lisp-compiler": "./dist/main.js",
+    "lisp-jit": "./dist/repl.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:native": "node-gyp rebuild",
+    "build:all": "npm run build && npm run build:native",
+    "compile": "node dist/main.js",
+    "jit": "node dist/repl.js",
+    "repl": "node dist/repl.js"
+  },
+  "keywords": ["lisp", "compiler", "jit", "arm64", "macos"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "node-gyp": "^11.2.0",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+*.o
+
+# Compiled binaries
+output
+test-binary
+test-binary-*
+test-from-obj
+test-macho-*
+test-obj-linked
+
+# IDE
+.vscode/
+
+# Claude
+.claude/
+
+# Debug files
+test.txt
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
